@@ -1,0 +1,7 @@
+# Set up a simple sudoers file
+---
+- include: "{{ansible_os_family}}"
+
+- name: Sudoers file
+  template: src=sudoers.j2 dest=/etc/sudoers validate='/usr/sbin/visudo -cf %s'
+  tags: ['sudo']
