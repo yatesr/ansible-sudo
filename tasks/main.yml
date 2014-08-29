@@ -10,7 +10,7 @@
   apt: name=sudo
        state=present
        update_cache=yes
-       cahce_valid_time=3600
+       cache_valid_time=3600
   when: ansible_os_family == 'Debian'
   tags: ['sudo']
 
