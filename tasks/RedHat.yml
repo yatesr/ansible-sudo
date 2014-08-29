@@ -1,3 +1,0 @@
-- name: Install sudo
-  yum: name=sudo
-       state=present
